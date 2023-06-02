@@ -4,7 +4,7 @@ import { useFetch } from "./useFetch";
 function App() {
   const { data, loading } = useFetch();
   // console.log(data);
-  const [page, setPage] = useState(8);
+  const [page, setPage] = useState(0);
   const [followers, setFollowers] = useState([]);
   useEffect(() => {
     if (loading) return;
